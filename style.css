@@ -1,0 +1,168 @@
+html{
+    height:100%;
+    min-height:100%;
+    width:100%;
+}
+body{
+    font-family: arial, sans-serif;
+    width:100%;
+}
+#content-area{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+#navbar{
+  display: flex;
+  justify-content: right;
+  padding-right: 23px;
+  justify-content: flex-end;
+}
+.navbar-link{
+    display:inline-block;
+    line-height:24px;
+    vertical-align:middle;
+    font-size:13px;
+    padding:10px 10px;
+    color: rgba(0,0,0,0.87);
+    text-decoration: none;
+
+}
+.navbar-link:active{
+    color: rgba(0,0,0,0.87);
+    text-decoration: none;
+    }
+#navbar-menu{
+    height:22px;
+    margin-top:12px;
+    padding:0 18px;
+}
+#navbar-img{
+    
+    width:22px;
+    background-size: 32px 32px;
+    border: 0;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    height: 32px;
+    width: 32px;
+    z-index: 0;
+    top:8px;   
+}
+#logo-area{
+    margin-top:40px;
+    height:233px;
+    text-align:center;
+    
+}
+#logo{
+    padding-top:20px;
+    width:330px;
+    height:182px;
+    
+}
+#search-area{
+    min-width:400px;
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    margin:auto;
+    
+}
+.search-bar{
+    border-radius:30px;
+    width:600px;
+    height:40px;
+    border:solid;
+    border-color: #dddddd;
+    border-width:thin;
+    margin-top:-50px;
+    margin-bottom:30px;    
+}
+.search-bar:focus{
+    box-shadow: 1px 1px 5px grey;
+}
+.search-bar:hover{
+    box-shadow: 1px 1px 5px grey;
+}
+
+.search-btn-area{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+}
+.search-btn{
+    background-color: #eeeeee;
+    border:none;
+    padding:10px;
+    margin:10px;
+    height:40px;
+    width:130px;
+    text-align: center;
+    border-radius: 4px;;
+    color:#686d76;
+    font-size: 14px;
+}
+.search-btn:hover{
+    box-shadow: 1px 1px 5px grey;
+    color: rgba(0,0,0,0.87);
+}
+#search-area p{
+    font-size:13px;
+    color: rgba(0,0,0,0.87);
+}
+#search-area a{
+    text-decoration: none;
+    color:blue;
+   
+}
+#footer{
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color:#686d76; 
+  font-size: 14px;
+  margin:14px 20px;
+  
+
+  
+  
+}
+#footer-links{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 8fr 1fr 1fr 1fr ;
+    grid-template-areas:"advertising business about hsw . privacy terms settings"
+    
+}
+#footer a{
+    color:#686d76; 
+    text-decoration: none;
+    margin:0 20px 0 0;
+}
+#advertising{
+    grid-area:advertising;
+}
+#business{
+    grid-area:business;
+}
+#about{
+    grid-area:about;
+}
+#hsw{
+    grid-area:hsw;
+    white-space:nowrap;
+}
+#privacy{
+    grid-area:privacy;
+}
+#terms{
+    grid-area:terms;
+}
+#settings{
+    grid-area:settings;
+}
+
+
+
